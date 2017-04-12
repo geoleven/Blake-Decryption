@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{20D2F707-4540-4B20-A700-57DB1A2F0614}</ProjectGuid>
+    <RootNamespace>BlakeRainbowTablesWinPP</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_MBCS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;pthreadVC2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\BlakeRainbowTables\blake_ref.hpp" />
+    <ClInclude Include="..\BlakeRainbowTables\byNet.hpp" />
+    <ClInclude Include="..\BlakeRainbowTables\CreateRBT.hpp" />
+    <ClInclude Include="..\BlakeRainbowTables\hashOperations.hpp" />
+    <ClInclude Include="..\BlakeRainbowTables\llist.hpp" />
+    <ClInclude Include="..\BlakeRainbowTables\RedFun.hpp" />
+    <ClInclude Include="..\BlakeRainbowTables\SearchRBT.hpp" />
+    <ClInclude Include="..\sockets\Base64.h" />
+    <ClInclude Include="..\sockets\Exception.h" />
+    <ClInclude Include="..\sockets\Ipv4Address.h" />
+    <ClInclude Include="..\sockets\Ipv6Address.h" />
+    <ClInclude Include="..\sockets\ISocketHandler.h" />
+    <ClInclude Include="..\sockets\Lock.h" />
+    <ClInclude Include="..\sockets\Mutex.h" />
+    <ClInclude Include="..\sockets\Parse.h" />
+    <ClInclude Include="..\sockets\ResolvServer.h" />
+    <ClInclude Include="..\sockets\ResolvSocket.h" />
+    <ClInclude Include="..\sockets\Semaphore.h" />
+    <ClInclude Include="..\sockets\Socket.h" />
+    <ClInclude Include="..\sockets\SocketHandler.h" />
+    <ClInclude Include="..\sockets\SocketHandlerThread.h" />
+    <ClInclude Include="..\sockets\SocketThread.h" />
+    <ClInclude Include="..\sockets\socket_include.h" />
+    <ClInclude Include="..\sockets\StreamSocket.h" />
+    <ClInclude Include="..\sockets\TcpSocket.h" />
+    <ClInclude Include="..\sockets\Thread.h" />
+    <ClInclude Include="..\sockets\UdpSocket.h" />
+    <ClInclude Include="..\sockets\Utility.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\BlakeRainbowTables\blake_ref.cpp" />
+    <ClCompile Include="..\BlakeRainbowTables\byNet.cpp" />
+    <ClCompile Include="..\BlakeRainbowTables\CreateRBT.cpp" />
+    <ClCompile Include="..\BlakeRainbowTables\hashOperations.cpp" />
+    <ClCompile Include="..\BlakeRainbowTables\llist.cpp" />
+    <ClCompile Include="..\BlakeRainbowTables\Main.cpp" />
+    <ClCompile Include="..\BlakeRainbowTables\RedFun.cpp" />
+    <ClCompile Include="..\BlakeRainbowTables\SearchRBT.cpp" />
+    <ClCompile Include="..\sockets\Base64.cpp" />
+    <ClCompile Include="..\sockets\Exception.cpp" />
+    <ClCompile Include="..\sockets\Ipv4Address.cpp" />
+    <ClCompile Include="..\sockets\Ipv6Address.cpp" />
+    <ClCompile Include="..\sockets\Lock.cpp" />
+    <ClCompile Include="..\sockets\Mutex.cpp" />
+    <ClCompile Include="..\sockets\Parse.cpp" />
+    <ClCompile Include="..\sockets\ResolvServer.cpp" />
+    <ClCompile Include="..\sockets\ResolvSocket.cpp" />
+    <ClCompile Include="..\sockets\Semaphore.cpp" />
+    <ClCompile Include="..\sockets\Socket.cpp" />
+    <ClCompile Include="..\sockets\SocketHandler.cpp" />
+    <ClCompile Include="..\sockets\SocketHandlerEp.cpp" />
+    <ClCompile Include="..\sockets\SocketHandlerThread.cpp" />
+    <ClCompile Include="..\sockets\SocketThread.cpp" />
+    <ClCompile Include="..\sockets\socket_include.cpp" />
+    <ClCompile Include="..\sockets\SSLInitializer.cpp" />
+    <ClCompile Include="..\sockets\StreamSocket.cpp" />
+    <ClCompile Include="..\sockets\TcpSocket.cpp" />
+    <ClCompile Include="..\sockets\Thread.cpp" />
+    <ClCompile Include="..\sockets\UdpSocket.cpp" />
+    <ClCompile Include="..\sockets\Utility.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
